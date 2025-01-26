@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Tuition Home </title>
+
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid black; */
+}
+
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#logo{
+    flex: 50%;
+}
+#logo h1 a{
+    font-size: larger;
+    font-style: bold;
+    color: orangered;
+    text-decoration: none;
+    
+}
+#search{
+    flex: 50%;
+    background: linear-gradient(blue,purple);
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type = text]{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type = submit]{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bolder;
+}
+
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(78, 78, 235);
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:800px) {
+    #menu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .sides{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    #menu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    input[type = text]{
+        width: 200px;
+        height: 30px;
+    }
+    button[type = submit]{
+        width: 70px;
+        height: 30px;
+    }
+    .sides{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+}
+
+#menu a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+#menu a:hover{
+    background-color: rgb(92, 11, 192);
+    font-size: 18px;
+}
+
+.intro{
+    background-color: rgb(119, 119, 243);
+    padding: 10px 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+.intro h1{
+    color: orangered;
+}
+.intro p{
+    color: white;
+    text-align: justify;
+}
+
+.sides{
+    /* border: 2px solid rgb(5, 5, 6); */
+    height: 500px;
+    width: 91%;
+    margin: 0 auto;
+    padding: 20px;
+}
+#side1{
+    height: 400px;
+    width: 500px;
+    border: 2px solid blue;
+    float: left;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+#side2{
+    height: 400px;
+    width: 500px;
+    border: 2px solid blue;
+    float: right;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+
+@media screen and (max-width:1120px) {
+    .sides{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+        padding: 20px;
+        
+    }
+    #side1{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+    
+    #side2{
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
+
+h3{
+    color: orangered;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+ ul {
+    padding: 10px;
+}
+
+#side1 ul li {
+    padding: 7px 30px;
+  
+}
+#side2 ul li {
+    padding: 15px 30px;
+}
+
+.sides #side1 ul li a{
+    color: black;
+    font-weight: bold;
+    font-size:15px ;}
+
+.sides #side1 ul li a:hover{
+    color: blue;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.sides #side2 ul li a{
+    color: black;
+    font-weight: bold;
+    font-size:15px ;}
+
+.sides #side2 ul li a:hover{
+    color: blue;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.footer{
+    background-color: blue;
+    height: 50px;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="header">
+
+            <div id="logo">
+                <h1><a href="#">Math Tuition</a></h1>
+            </div>
+            <div id="search">   
+                <form >
+                    <input type="text" name="search" placeholder="Search..">
+                    <button type="submit" name="submit-search">Search</button>
+                </form>  
+            </div>
+        </div>
+     
+        <div id="menu">
+            <a href="#" class="action">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Get Home Tutor</a>
+            <a href="#">Contact</a>
+            <a href="#">Login/sinup</a>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h1>Importance of Math</h1>
+        <p>Mathematics is a fundamental and universal discipline that helps us understand the world and develop mental skills1234. Mathematics has been integral to our progress as a species, from counting to building to navigating1. Mathematics nurtures qualities such as reasoning, creativity, critical thinking, problem-solving, and communication234. Mathematics also connects to other subjects like science, social studies, music, and art</p>
+    </div>
+
+    <div class="sides">
+        <div id="side1">
+            <h3>Select Your Class</h3>
+            <ul>
+                <li><a href="#">Class 1 Free Lessons</a></li>
+                <li><a href="#">Class 2 Free Lessons</a></li>
+                <li><a href="#">Class 3 Free Lessons</a></li>
+                <li><a href="#">Class 4 Free Lessons</a></li>
+                <li><a href="#">Class 5 Free Lessons</a></li>
+                <li><a href="#">Class 6 Free Lessons</a></li>
+                <li><a href="#">Class 7 Free Lessons</a></li>
+                <li><a href="#">Class 8 Free Lessons</a></li>
+                <li><a href="#">Class 9 Free Lessons</a></li>
+            </ul>
+        </div>
+
+        <div id="side2">
+            <h3>Why Us?</h3>
+            <ul>
+                <li><a href="#">Best Tutor Available</a></li>
+                <li><a href="#">15 Days Money Back Guarantee</a></li>
+                <li><a href="#">Intracting Games For Learning</a> </li>
+                <li><a href="#">Learn at Your Own Convenience</a></li>
+                <li><a href="#">Video And Gaming Lectures</a></li>
+            </ul>
+        </div>
+    </div>
+    
+     <div class="footer">
+        <h4>Math Tuition Copyright &copy; 2025-2026</h4>
+     </div>
+
+</body>
+</html>
